@@ -48,16 +48,7 @@ The `records.txt` file should contain space-separated pairs of employee number a
 
 ## Key Operations
 
-### Time Complexity
-- **Insert**: O(log n)
-- **Delete**: O(n) - linear search for employee, then O(log n) for heap operations
-- **Heap Sort**: O(n log n)
 
-### Space Complexity
-- O(n) where n is the number of employees
-
-## Implementation Details
-
-- Uses **max-heap** based on employee number (larger IDs bubble up)
+- Uses **max-heap** based on employee number
 - Parent-child relationship: for index i, parent = (i-1)/2, left child = 2i+1, right child = 2i+2
-- Heap operations: `heapifyUp()` and `heapifyDown()` maintain the heap property
+- Heap operations: `heapifyUp()` and `heapifyDown()` maintain the heap properties
